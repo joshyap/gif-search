@@ -1,0 +1,32 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "h h h"
+        "s s s"
+        "c c c"
+        "f f f"
+}
+
+.head {
+    grid-area: h;
+}
+
+.search {
+    grid-area: s;
+}
+
+.results {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
